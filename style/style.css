@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 50px 0px 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+header .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left-nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header .left-nav .left-flex {
+  margin-left: 30px;
+}
+
+header .left-nav .left-flex h1 {
+  text-transform: capitalize;
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+
+header .left-nav .left-flex ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+header .left-nav .left-flex ul li.active {
+  border-bottom: 2px solid black;
+}
+
+header .right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+
+header .right-nav .navbar-search {
+  position: relative;
+}
+
+header .right-nav input {
+  position: relative;
+  height: 30px;
+  border-radius: 30px;
+  text-indent: 32px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 20px;
+  min-width: 255px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  border: 1px solid grey;
+}
+
+header .right-nav svg {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+header .right-nav img {
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+}
+
+section {
+  margin-top: 40px;
+  padding-bottom: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .content-one {
+  border-radius: 5px;
+  background: white;
+  width: 800px;
+  padding: 5px;
+}
+
+section .content-one .add-text {
+  cursor: pointer;
+  margin: 10px 0 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: blue;
+}
+
+section .content-one .add-text img {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+section .content-one .add-text span {
+  text-transform: capitalize;
+}
+
+section .content-two {
+  padding: 15px 0 10px 20px;
+  margin-top: 1px;
+  border-radius: 5px;
+  background: white;
+  width: 800px;
+}
+
+section .content-two .recently-assigned, section .content-two .today, section .content-two .upcoming {
+  padding-top: 25px;
+}
+
+section .content-two .recently-assigned hr, section .content-two .today hr, section .content-two .upcoming hr {
+  height: 3px;
+  margin-right: 40px;
+  background-color: black;
+}
+
+section .content-two .recently-assigned .special, section .content-two .today .special, section .content-two .upcoming .special {
+  height: 0.1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section .content-two .recently-assigned .header, section .content-two .today .header, section .content-two .upcoming .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+section .content-two .recently-assigned .header img, section .content-two .today .header img, section .content-two .upcoming .header img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+section .content-two .recently-assigned .header h3, section .content-two .today .header h3, section .content-two .upcoming .header h3 {
+  text-transform: capitalize;
+}
+
+section .content-two .recently-assigned .content, section .content-two .today .content, section .content-two .upcoming .content {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 40px;
+}
+
+section .content-two .recently-assigned .content .content-left, section .content-two .today .content .content-left, section .content-two .upcoming .content .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+section .content-two .recently-assigned .content .content-left img, section .content-two .today .content .content-left img, section .content-two .upcoming .content .content-left img {
+  width: 20px;
+  height: 20px;
+}
+
+section .content-two .recently-assigned .content .content-right, section .content-two .today .content .content-right, section .content-two .upcoming .content .content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+section .content-two .recently-assigned .content .content-right span, section .content-two .today .content .content-right span, section .content-two .upcoming .content .content-right span {
+  text-transform: capitalize;
+}
+
+section .content-two .recently-assigned .content .content-right span:first-child, section .content-two .today .content .content-right span:first-child, section .content-two .upcoming .content .content-right span:first-child {
+  background: blue;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 8px 5px 8px;
+}
+
+section .content-two .recently-assigned .content .content-right .brand, section .content-two .today .content .content-right .brand, section .content-two .upcoming .content .content-right .brand {
+  background: orange !important;
+}
+
+section .content-two .recently-assigned .content .content-right .recruiting, section .content-two .today .content .content-right .recruiting, section .content-two .upcoming .content .content-right .recruiting {
+  background: teal !important;
+}
+
+section .content-two .recently-assigned .content .content-right .mobile, section .content-two .today .content .content-right .mobile, section .content-two .upcoming .content .content-right .mobile {
+  background: red !important;
+}
+
+section .content-two .recently-assigned .content .content-right .website, section .content-two .today .content .content-right .website, section .content-two .upcoming .content .content-right .website {
+  background: rgba(255, 0, 0, 0.678) !important;
+}
+
+section .content-two .recently-assigned .content .content-right .sales, section .content-two .today .content .content-right .sales, section .content-two .upcoming .content .content-right .sales {
+  background: lime !important;
+}
+
+section .content-two .recently-assigned .content .content-right .monday, section .content-two .today .content .content-right .monday, section .content-two .upcoming .content .content-right .monday {
+  background: none !important;
+}
+/*# sourceMappingURL=style.css.map */
